@@ -211,8 +211,14 @@
     NSString *tmpPath = [tmpDirectory stringByAppendingPathComponent:tmpFile];
     
     if ([[NSFileManager defaultManager] createFileAtPath:tmpPath contents:data attributes:nil]) {
+        if (_result == nil) {
+            return;
+        }
         _result(tmpPath);
     } else {
+        if (_result == nil) {
+            return;
+        }
         _result([FlutterError errorWithCode:@"create_error"
                                     message:@"Temporary file could not be created"
                                     details:nil]);

@@ -1,5 +1,5 @@
 #import "ImageCropperPlugin.h"
-#import <TOCropViewController/TOCropViewController.h>
+#import "TOCropViewController.h"
 #import <UIKit/UIKit.h>
 #import <MobileCoreServices/MobileCoreServices.h>
 #import <Photos/Photos.h>

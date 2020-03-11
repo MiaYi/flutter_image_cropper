@@ -12,8 +12,8 @@ A Flutter plugin supports cropping images
   s.license          = { :file => '../LICENSE' }
   s.author           = { 'HungHD' => 'hunghd.yb@gmail.com' }
   s.source           = { :path => '.' }
-  s.source_files = 'Classes/**/*'
-  s.public_header_files = 'Classes/**/*.h'
+  s.source_files = 'Classes/**/**/*'
+  s.public_header_files = 'Classes/**/**/*.h'
   s.dependency 'Flutter'
   
   s.ios.deployment_target = '8.0'
